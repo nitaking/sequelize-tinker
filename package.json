@@ -1,0 +1,38 @@
+{
+  "name": "sequelize-tinker",
+  "description": "A REPL for sequelize inspired by Laravel Tinker.",
+  "version": "0.2.2",
+  "author": "nitaking @nitaking",
+  "bin": {
+    "sequelize-tinker": "./bin/run"
+  },
+  "bugs": "https://github.com/nitaking/tinker/issues",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/nitaking/tinker",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "sequelize-tinker"
+  },
+  "repository": "nitaking/tinker",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "echo NO TESTS"
+  },
+  "devDependencies": {
+    "semistandard": "^14.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "1bf0eae18b0d32fb7c697b6d11b9c4b630574907"
+}
