@@ -40,6 +40,15 @@ jobs:
             - ~/cli/node_modules
             - /usr/local/share/.cache/yarn
             - /usr/local/share/.config/yarn
+  global-install:
+    steps:
+      - checkout
+      - run:
+          name: Global yarn Install
+          command: yarn global add sequelize-tinker
+      - run:
+          name: Global npm Install
+          command: npm -g install sequelize-tinker
 
 workflows:
   version: 2
@@ -54,3 +63,7 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
+      - global-install:
+          filters:
+            tags:
+              only: /^v.*/
