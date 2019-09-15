@@ -10,6 +10,9 @@ A REPL for sequelize inspired by Laravel Tinker.
 [![Downloads/week](https://img.shields.io/npm/dw/sequelize-tinker.svg)](https://npmjs.org/package/sequelize-tinker)
 [![License](https://img.shields.io/npm/l/sequelize-tinker.svg)](https://github.com/nitaking/tinker/blob/master/package.json)
 
+![2019-09-15 16 56 05](https://user-images.githubusercontent.com/10850034/64918547-e36e2680-d7da-11e9-82db-757c5f8d78f7.gif)
+
+
 <!-- toc -->
 # Usage
 
