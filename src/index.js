@@ -4,9 +4,7 @@ const {initializeContext} = require('./sequelize-context')
 
 class SequelizeTinkerCommand extends Command {
   async run() {
-    const {flags} = this.parse(SequelizeTinkerCommand)
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from ./src/index.js`)
+    // const {flags} = this.parse(SequelizeTinkerCommand)
 
     const replUtil = new Repl({initializeContext})
     replUtil.start()
