@@ -41,5 +41,8 @@
     "posttest": "eslint src",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
     "lint:fix": "eslint src --fix"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
