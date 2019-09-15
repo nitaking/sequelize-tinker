@@ -2,7 +2,7 @@ const {Command, flags} = require('@oclif/command')
 const Repl = require('./repl')
 const {initializeContext} = require('./sequelize-context')
 
-const _initialFlags = {};
+const _initialFlags = {}
 
 class SequelizeTinkerCommand extends Command {
   async run() {
