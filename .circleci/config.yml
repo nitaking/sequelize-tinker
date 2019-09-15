@@ -41,6 +41,7 @@ jobs:
             - /usr/local/share/.cache/yarn
             - /usr/local/share/.config/yarn
   global-install:
+    <<: *test
     steps:
       - checkout
       - run:
