@@ -1,5 +1,5 @@
 {
-  "name": "@tinker/sequelize",
+  "name": "sequelize-tinker",
   "description": "A REPL for sequelize inspired by Laravel Tinker.",
   "version": "0.0.0",
   "author": "nitaking @nitaking",
