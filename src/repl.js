@@ -1,9 +1,10 @@
-const repl = require('repl');
+const repl = require('repl')
+const logger = require('./log')
 
-class ReplUtil {
+class Repl {
   constructor(props) {
     if (props.initializeContext) {
-      this._initializeContext = props.initializeContext;
+      this._initializeContext = props.initializeContext
     }
   }
 
@@ -14,22 +15,21 @@ class ReplUtil {
     }
   }
 
-  start () {
+  start() {
     this.server = repl.start({
       prompt: '>> ',
-    });
-    this.initialize();
+    })
+    this.initialize()
 
-    console.log(`CLI (REPL)\nType ^C to exit.\n`);
-    console.log(`ex) models.User.findOne()\n`);
+    logger.log('CLI (REPL)\nType ^C to exit.\n')
+    logger.log('ex) models.User.findOne()\n')
 
-    this.server.on('exit', this.exit);
-    this.server.on('line', this.line);
-
+    this.server.on('exit', this.exit)
+    this.server.on('line', this.line)
   }
 
   exit() {
-    console.log('Bye!');
+    logger.log('Bye!')
   }
 
   line() {
@@ -37,4 +37,4 @@ class ReplUtil {
   }
 }
 
-module.exports = ReplUtil;
+module.exports = Repl

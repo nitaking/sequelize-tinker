@@ -1,12 +1,25 @@
 {
-  "name": "sequelize-tinker",
+  "name": "@tinker/sequelize",
   "description": "A REPL for sequelize inspired by Laravel Tinker.",
-  "version": "0.2.2",
+  "version": "0.0.0",
   "author": "nitaking @nitaking",
   "bin": {
     "sequelize-tinker": "./bin/run"
   },
   "bugs": "https://github.com/nitaking/tinker/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "mocha": "^5",
+    "nyc": "^13"
+  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -25,14 +38,8 @@
   },
   "repository": "nitaking/tinker",
   "scripts": {
-    "posttest": "eslint .",
-    "test": "echo NO TESTS"
-  },
-  "devDependencies": {
-    "semistandard": "^14.1.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "1bf0eae18b0d32fb7c697b6d11b9c4b630574907"
+    "posttest": "eslint src",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "lint:fix": "eslint src --fix"
+  }
 }

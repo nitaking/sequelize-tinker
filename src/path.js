@@ -1,3 +1,3 @@
 module.exports = {
-  workDir: process.cwd()
-};
+  workDir: process.cwd(),
+}
