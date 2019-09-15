@@ -6,7 +6,7 @@
   "bin": {
     "sequelize-tinker": "./bin/run"
   },
-  "bugs": "https://github.com/nitaking/tinker/issues",
+  "bugs": "https://github.com/nitaking/sequelize-tinker/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -27,7 +27,7 @@
     "/bin",
     "/src"
   ],
-  "homepage": "https://github.com/nitaking/tinker",
+  "homepage": "https://github.com/nitaking/sequelize-tinker",
   "keywords": [
     "oclif"
   ],
