@@ -29,7 +29,13 @@
   ],
   "homepage": "https://github.com/nitaking/sequelize-tinker",
   "keywords": [
-    "oclif"
+    "oclif",
+    "node",
+    "laravel-tinker",
+    "rails-console",
+    "node-tinker",
+    "sequelize",
+    "sequelize-tinker"
   ],
   "license": "MIT",
   "main": "src/index.js",
