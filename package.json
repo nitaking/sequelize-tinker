@@ -1,7 +1,7 @@
 {
   "name": "sequelize-tinker",
   "description": "A REPL for sequelize inspired by Laravel Tinker.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "nitaking @nitaking",
   "bin": {
     "sequelize-tinker": "./bin/run"
