@@ -1,6 +1,7 @@
-const {workDir} = require('./path')
+
 const {secureRequire} = require('./secure-require')
-const models = secureRequire(`${workDir}/models`) // todo: import setting
+const config = require('./config')
+const models = secureRequire(config.getModelsPath()) // todo: import setting
 const sequelize = models && models.sequelize
 
 function initializeContext(context) {
