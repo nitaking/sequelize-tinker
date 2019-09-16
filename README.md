@@ -30,7 +30,7 @@ sequelize-tinker
 <!-- commands -->
 # Todo
 
-- [ ] Custom Sequelize Model setting.
+- [x] Custom Sequelize Model setting.
 - [ ] Option
     - [ ] Output JSON.stringify
 - [ ] Command
