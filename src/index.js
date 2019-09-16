@@ -3,12 +3,11 @@ const jq = require('node-jq')
 
 const Repl = require('./repl')
 const {initializeContext} = require('./sequelize-context')
-const { setModelsPath, getAll } = require('./config')
+const {setModelsPath, getAll} = require('./config')
 
 const _initialFlags = {}
 
 class SequelizeTinkerCommand extends Command {
-
   async run() {
     const {flags, args} = this.parse(SequelizeTinkerCommand)
 
@@ -18,13 +17,13 @@ class SequelizeTinkerCommand extends Command {
 
     // show config
     if (args.firstArg === 'config') {
-      jq.run('.', getAll(), { input: 'json' })
-        .then((output) => {
-          this.log(output)
-        })
-        .catch((error) => {
-          this.error(error)
-        })
+      jq.run('.', getAll(), {input: 'json'})
+      .then(output => {
+        this.log(output)
+      })
+      .catch(error => {
+        this.error(error)
+      })
       return
     }
 
@@ -48,7 +47,7 @@ SequelizeTinkerCommand.flags = {
   // add --help flag to show CLI version
   help: flags.help({char: 'h'}),
   // name: flags.string({ char: 'n', description: 'name to print' })
-  'models-path': flags.string({char: 'p', description: `Set Sequelize models's dir path.`}),
+  'models-path': flags.string({char: 'p', description: 'Set Sequelize models\'s dir path.'}),
 }
 
 SequelizeTinkerCommand.args = [

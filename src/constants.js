@@ -2,7 +2,7 @@ const {workDir} = require('./path')
 
 // config key
 const MODELS_PATH = 'models-path'
-const CONFIG_KEYS = [MODELS_PATH];
+const CONFIG_KEYS = [MODELS_PATH]
 
 // values
 const BASE_MODELS_PATH = `${workDir}/models`
