@@ -44,7 +44,7 @@
   "oclif": {
     "bin": "sequelize-tinker"
   },
-  "repository": "nitaking/tinker",
+  "repository": "nitaking/sequelize-tinker",
   "scripts": {
     "posttest": "eslint src",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
