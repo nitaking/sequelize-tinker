@@ -30,10 +30,10 @@ sequelize-tinker
 <!-- commands -->
 # Todo
 
-- [x] Custom Sequelize Model setting.
+- [x] Custom Sequelize model's directory path setting.
 - [ ] Option
-    - [ ] Output JSON.stringify
+    - [ ] Default output JSON.stringify
 - [ ] Command
-    - [ ] ls
-    - [ ] help
+    - [ ] ls (show local variables)
+    - [ ] help (show help in repl time)
     
