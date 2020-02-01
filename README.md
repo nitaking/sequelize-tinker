@@ -15,7 +15,7 @@ A REPL for sequelize inspired by Laravel Tinker.
 
 
 <!-- toc -->
-# Usage
+# Introduction
 
 ```sh
 cd path/to/your-sequelize-package
@@ -23,7 +23,7 @@ npx sequelize-tinker
 ```
 
 <!-- usage -->
-# Commands
+# Usage
 
 ```shell script
 $ sequelize-tinker
@@ -45,6 +45,17 @@ Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updated
   createdAt: 2020-02-01T12:50:17.000Z,
   updatedAt: 2020-02-01T12:50:17.000Z }
 
+```
+
+```shell script
+$ sequelize-tinker
+>> Start sequelize-tinker! 
+...
+>> const u = await User.findOne({ raw: true, where: { id: 49197 }  })
+undefined
+>> u.email
+'email_49197@example.com'
+>> 
 ```
 
 # Advance
