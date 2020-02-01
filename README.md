@@ -26,7 +26,7 @@ npx sequelize-tinker
 # Usage
 
 ```shell script
-$ sequelize-tinker
+$ npx sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> models
@@ -34,7 +34,7 @@ $ sequelize-tinker
 ```
 
 ```shell script
-$ sequelize-tinker
+$ npx sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> User.findOne({ raw: true })
@@ -48,7 +48,7 @@ Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updated
 ```
 
 ```shell script
-$ sequelize-tinker
+$ npx sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> const u = await User.findOne({ raw: true, where: { id: 49197 }  })
