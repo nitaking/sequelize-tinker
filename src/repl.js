@@ -1,3 +1,5 @@
+const stubber = require('async-repl/stubber')
+
 const repl = require('repl')
 const logger = require('./log')
 
@@ -19,10 +21,12 @@ class Repl {
     this.server = repl.start({
       prompt: '>> ',
     })
+    // await可能にする。
+    stubber(this.server)
     this.initialize()
 
-    logger.log('CLI (REPL)\nType ^C to exit.\n')
-    logger.log('ex) models.User.findOne()\n')
+    logger.log('Start sequelize-tinker! \nType ^C to exit.\n')
+    logger.log('ex: User.findOne()')
 
     this.server.on('exit', this.exit)
     this.server.on('line', this.line)

@@ -3,11 +3,6 @@ const constants = require('./constants')
 
 const config = new Conf()
 
-const getModelsPath = ()/* :void */ => config.get(constants.MODELS_PATH, constants.BASE_MODELS_PATH)
-const setModelsPath = modelsPath/* :string */ => {
-  config.set(constants.MODELS_PATH, modelsPath)
-}
-
 const getAll = () => {
   let result = {}
   constants.CONFIG_KEYS.forEach(key => {
@@ -17,8 +12,13 @@ const getAll = () => {
 }
 
 module.exports = {
-  getModelsPath,
-  setModelsPath,
+  getModelsPath: ()/* :string */ =>
+    config.get(constants.MODELS_PATH, constants.BASE_MODELS_PATH),
+  setModelsPath: modelsPath/* :void */ => {
+    config.set(constants.MODELS_PATH, modelsPath)
+  },
+  getLs: ()/* :string */ =>
+    config.get(constants.LS_OUTPUT, constants.BASE_MODELS_PATH),
   config,
   getAll,
 }
