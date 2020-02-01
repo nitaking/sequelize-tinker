@@ -50,6 +50,15 @@ Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updated
 
 ```
 
+# Advance
+## Custom your directory:
+
+Custom Models Dir: `--models-path` option.
+
+```shell script
+$ sequelize-tinker --models-path=models/index.js        
+```
+
 <!-- commands -->
 # Todo
 
