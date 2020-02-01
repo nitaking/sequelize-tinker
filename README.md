@@ -37,3 +37,19 @@ sequelize-tinker
     - [ ] ls (show local variables)
     - [ ] help (show help in repl time)
     
+
+# Contribution
+
+```bash
+git clone git@github.com:nitaking/sequelize-tinker.git
+cd example
+./bin/run
+```
+
+##### another sequelize project
+```
+git clone git@github.com:nitaking/sequelize-tinker.git
+npm link
+cd another/prj
+sequelize-tinker # Uninstall if you have installed.
+```
