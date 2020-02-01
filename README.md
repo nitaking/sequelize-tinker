@@ -18,11 +18,8 @@ A REPL for sequelize inspired by Laravel Tinker.
 # Usage
 
 ```sh
-npm -g install sequelize-tinker
-# yarn global add sequelize-tinker
-
-cd path/to/sequelize-package
-sequelize-tinker
+cd path/to/your-sequelize-package
+npx sequelize-tinker
 ```
 
 <!-- usage -->
