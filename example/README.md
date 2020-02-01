@@ -1,8 +1,9 @@
 ## Setup
 
 ```shell script
-sequelize db:create
-sequelize db:migrate                
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate    
+npx sequelize-cli db:seed:all            
 ```
 
 ## Try sequelize-tinker !

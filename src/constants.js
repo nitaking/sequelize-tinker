@@ -1,14 +1,14 @@
 const {workDir} = require('./path')
 
-// config key
-const MODELS_PATH = 'models-path'
-const CONFIG_KEYS = [MODELS_PATH]
-
-// values
-const BASE_MODELS_PATH = `${workDir}/models`
+const configs = {
+  MODELS_PATH: 'models-path',
+}
 
 module.exports = {
-  CONFIG_KEYS,
-  MODELS_PATH,
-  BASE_MODELS_PATH,
+  // config key
+  MODELS_PATH: configs.MODELS_PATH,
+  //
+  CONFIG_KEYS: Object.keys(configs),
+  // values
+  BASE_MODELS_PATH: `${workDir}/models`,
 }

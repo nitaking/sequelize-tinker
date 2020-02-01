@@ -27,10 +27,33 @@ sequelize-tinker
 <!-- usage -->
 # Commands
 
+```shell script
+$ sequelize-tinker
+>> Start sequelize-tinker! 
+...
+>> models
+# [ 'Task', 'User' ]
+```
+
+```shell script
+$ sequelize-tinker
+>> Start sequelize-tinker! 
+...
+>> User.findOne({ raw: true })
+Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Users` AS `User` LIMIT 1;
+{ id: 1,
+  firstName: 'John',
+  lastName: 'Doe',
+  createdAt: 2020-02-01T12:50:17.000Z,
+  updatedAt: 2020-02-01T12:50:17.000Z }
+
+```
+
 <!-- commands -->
 # Todo
 
 - [x] Custom Sequelize model's directory path setting.
+- [x] Available await command.
 - [ ] Option
     - [ ] Default output JSON.stringify
 - [ ] Command
