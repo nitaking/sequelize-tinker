@@ -81,6 +81,7 @@ $ sequelize-tinker --models-path=models/index.js
 - [ ] Command
     - [ ] ls (show local variables)
     - [ ] help (show help in repl time)
+- [ ] Multi Line
 
 # Roadmap
 1. ts-node(for TypeScript sequelize)
