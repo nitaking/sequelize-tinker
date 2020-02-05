@@ -18,15 +18,19 @@ A REPL for sequelize inspired by Laravel Tinker.
 # Introduction
 
 ```sh
+npg -g install sequelize-tinker
+```
+
+```sh
 cd path/to/your-sequelize-package
-npx sequelize-tinker
+sequelize-tinker
 ```
 
 <!-- usage -->
 # Usage
 
 ```shell script
-$ npx sequelize-tinker
+$ sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> models
@@ -34,7 +38,7 @@ $ npx sequelize-tinker
 ```
 
 ```shell script
-$ npx sequelize-tinker
+$ sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> User.findOne({ raw: true })
@@ -48,7 +52,7 @@ Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updated
 ```
 
 ```shell script
-$ npx sequelize-tinker
+$ sequelize-tinker
 >> Start sequelize-tinker! 
 ...
 >> const u = await User.findOne({ raw: true, where: { id: 49197 }  })
