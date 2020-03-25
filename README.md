@@ -12,7 +12,9 @@ A REPL for sequelize inspired by Laravel Tinker.
 
 ![2020-02-01 23 04 37](https://user-images.githubusercontent.com/10850034/73593419-63f1b180-4547-11ea-9f4a-1a54bcffd27a.gif)
 
-
+<p align="center">
+<a href="https://www.buymeacoffee.com/axIqgPk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+</p>
 
 <!-- toc -->
 # Introduction
