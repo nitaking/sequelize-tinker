@@ -100,7 +100,7 @@ cd example
 
 ##### another sequelize project
 ```
-git clone git@github.com:nitaking/sequelize-tinker.git
+# fork from git@github.com:nitaking/sequelize-tinker.git
 npm link
 cd another/prj
 sequelize-tinker # Uninstall if you have installed.
