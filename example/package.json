@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.3",
+    "sequelize": "^6.29.0",
     "sequelize-cli": "^5.5.1"
   }
 }
