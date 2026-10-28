@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.3",
-    "sequelize-cli": "^5.5.1"
+    "mysql2": "^3.24.6",
+    "sequelize": "^6.37.8",
+    "sequelize-cli": "^6.6.5"
   }
 }

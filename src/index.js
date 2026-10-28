@@ -1,5 +1,4 @@
 const {Command, flags} = require('@oclif/command')
-const jq = require('node-jq')
 
 const Repl = require('./repl')
 const {initializeContext} = require('./sequelize-context')
@@ -17,13 +16,7 @@ class SequelizeTinkerCommand extends Command {
 
     // show config
     if (args.firstArg === 'config') {
-      jq.run('.', getAll(), {input: 'json'})
-      .then(output => {
-        this.log(output)
-      })
-      .catch(error => {
-        this.error(error)
-      })
+      this.log(JSON.stringify(getAll(), null, 2))
       return
     }
 
