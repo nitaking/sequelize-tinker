@@ -2,6 +2,7 @@
   "name": "@nitaking/sequelize-tinker",
   "version": "0.4.1",
   "description": "A REPL for sequelize inspired by Laravel Tinker.",
+  "license": "MIT",
   "exports": "./src/index.js",
   "publish": {
     "include": [
