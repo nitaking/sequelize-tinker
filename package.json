@@ -4,7 +4,7 @@
   "version": "0.5.1",
   "author": "nitaking @nitaking",
   "bin": {
-    "sequelize-tinker": "./bin/run"
+    "sequelize-tinker": "bin/run"
   },
   "bugs": "https://github.com/nitaking/sequelize-tinker/issues",
   "type": "module",
@@ -46,7 +46,10 @@
   "oclif": {
     "bin": "sequelize-tinker"
   },
-  "repository": "nitaking/sequelize-tinker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitaking/sequelize-tinker.git"
+  },
   "scripts": {
     "posttest": "eslint src",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
