@@ -3,6 +3,18 @@ sequelize-tinker
 
 A REPL for sequelize inspired by Laravel Tinker.
 
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+>
+> Node.js's built-in REPL now supports top-level `await` and history, so you can do the same thing without this tool:
+>
+> ```sh
+> $ cd path/to/your-sequelize-package
+> $ node
+> > const db = require('./models')
+> > await db.User.findOne()
+> ```
+
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/sequelize-tinker.svg)](https://npmjs.org/package/sequelize-tinker)
 [![CI](https://github.com/nitaking/sequelize-tinker/actions/workflows/ci.yml/badge.svg)](https://github.com/nitaking/sequelize-tinker/actions/workflows/ci.yml)
