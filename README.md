@@ -5,7 +5,8 @@ A REPL for sequelize inspired by Laravel Tinker.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/sequelize-tinker.svg)](https://npmjs.org/package/sequelize-tinker)
-[![CircleCI](https://circleci.com/gh/nitaking/tinker/tree/master.svg?style=shield)](https://circleci.com/gh/nitaking/tinker/tree/master)
+[![CI](https://github.com/nitaking/sequelize-tinker/actions/workflows/ci.yml/badge.svg)](https://github.com/nitaking/sequelize-tinker/actions/workflows/ci.yml)
+[![JSR](https://jsr.io/badges/@nitaking/sequelize-tinker)](https://jsr.io/@nitaking/sequelize-tinker)
 [![Codecov](https://codecov.io/gh/nitaking/tinker/branch/master/graph/badge.svg)](https://codecov.io/gh/nitaking/tinker)
 [![Downloads/week](https://img.shields.io/npm/dw/sequelize-tinker.svg)](https://npmjs.org/package/sequelize-tinker)
 [![License](https://img.shields.io/npm/l/sequelize-tinker.svg)](https://github.com/nitaking/tinker/blob/master/package.json)

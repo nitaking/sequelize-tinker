@@ -1,7 +1,7 @@
-const Conf = require('conf')
-const constants = require('./constants')
+import Conf from 'conf'
+import * as constants from './constants.js'
 
-const config = new Conf()
+const config = new Conf({projectName: 'sequelize-tinker'})
 
 const getAll = () => {
   let result = {}
@@ -11,7 +11,7 @@ const getAll = () => {
   return result
 }
 
-module.exports = {
+export default {
   getModelsPath: ()/* :string */ =>
     config.get(constants.MODELS_PATH, constants.BASE_MODELS_PATH),
   setModelsPath: modelsPath/* :void */ => {

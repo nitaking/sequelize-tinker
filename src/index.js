@@ -1,9 +1,10 @@
-const {Command, flags} = require('@oclif/command')
-const jq = require('node-jq')
+import {Command, flags} from '@oclif/command'
 
-const Repl = require('./repl')
-const {initializeContext} = require('./sequelize-context')
-const {setModelsPath, getAll} = require('./config')
+import Repl from './repl.js'
+import {initializeContext} from './sequelize-context.js'
+import config from './config.js'
+
+const {setModelsPath, getAll} = config
 
 const _initialFlags = {}
 
@@ -17,13 +18,7 @@ class SequelizeTinkerCommand extends Command {
 
     // show config
     if (args.firstArg === 'config') {
-      jq.run('.', getAll(), {input: 'json'})
-      .then(output => {
-        this.log(output)
-      })
-      .catch(error => {
-        this.error(error)
-      })
+      this.log(JSON.stringify(getAll(), null, 2))
       return
     }
 
@@ -60,4 +55,4 @@ SequelizeTinkerCommand.examples = [
   '$ sequelize-tinker config',
 ]
 
-module.exports = SequelizeTinkerCommand
+export default SequelizeTinkerCommand
