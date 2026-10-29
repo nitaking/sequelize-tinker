@@ -1,7 +1,9 @@
-const stubber = require('async-repl/stubber')
+import os from 'node:os'
+import path from 'node:path'
+import repl from 'node:repl'
+import logger from './log.js'
 
-const repl = require('repl')
-const logger = require('./log')
+const historyFile = path.join(os.homedir(), '.sequelize_tinker_history')
 
 class Repl {
   constructor(props) {
@@ -21,8 +23,8 @@ class Repl {
     this.server = repl.start({
       prompt: '>> ',
     })
-    // await可能にする。
-    stubber(this.server)
+    // awaitはNode標準のREPLで利用可能。履歴のみ設定する。
+    this.server.setupHistory(historyFile, () => {})
     this.initialize()
 
     logger.log('Start sequelize-tinker! \nType ^C to exit.\n')
@@ -41,4 +43,4 @@ class Repl {
   }
 }
 
-module.exports = Repl
+export default Repl

@@ -1,5 +1,9 @@
-const fs = require('fs')
-const logger = require('./log')
+import fs from 'node:fs'
+import {createRequire} from 'node:module'
+import logger from './log.js'
+
+// ユーザーのmodels(CommonJS)をカレントディレクトリ基準で読み込む
+const require = createRequire(`${process.cwd()}/`)
 
 const checkRequire = path => {
   try {
@@ -12,6 +16,4 @@ const checkRequire = path => {
   }
 }
 
-module.exports = {
-  secureRequire: checkRequire,
-}
+export {checkRequire as secureRequire}

@@ -1,18 +1,14 @@
-const {expect, test} = require('@oclif/test')
-const cmd = require('..')
+import {expect} from 'chai'
+import execa from 'execa'
 
-describe('@tinker/sequelize', () => {
-  // test
-  // .stdout()
-  // .do(() => cmd.run([]))
-  // .it('runs hello', ctx => {
-  //   expect(ctx.stdout).to.contain('hello world')
-  // })
+describe('sequelize-tinker', () => {
+  it('shows version', async () => {
+    const {stdout} = await execa('./bin/run', ['--version'])
+    expect(stdout).to.contain('sequelize-tinker/')
+  })
 
-  // test
-  // .stdout()
-  // .do(() => cmd.run(['--name', 'jeff']))
-  // .it('runs hello --name jeff', ctx => {
-  //   expect(ctx.stdout).to.contain('hello jeff')
-  // })
+  it('shows config as JSON', async () => {
+    const {stdout} = await execa('./bin/run', ['config'])
+    expect(JSON.parse(stdout)).to.be.an('object')
+  })
 })

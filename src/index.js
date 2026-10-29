@@ -1,8 +1,10 @@
-const {Command, flags} = require('@oclif/command')
+import {Command, flags} from '@oclif/command'
 
-const Repl = require('./repl')
-const {initializeContext} = require('./sequelize-context')
-const {setModelsPath, getAll} = require('./config')
+import Repl from './repl.js'
+import {initializeContext} from './sequelize-context.js'
+import config from './config.js'
+
+const {setModelsPath, getAll} = config
 
 const _initialFlags = {}
 
@@ -53,4 +55,4 @@ SequelizeTinkerCommand.examples = [
   '$ sequelize-tinker config',
 ]
 
-module.exports = SequelizeTinkerCommand
+export default SequelizeTinkerCommand

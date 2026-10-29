@@ -1,4 +1,8 @@
 #!/usr/bin/env node
 
-require('..').run()
-.catch(require('@oclif/errors/handle'))
+import {fileURLToPath} from 'node:url'
+import handle from '@oclif/errors/handle.js'
+import SequelizeTinkerCommand from '../src/index.js'
+
+SequelizeTinkerCommand.run(undefined, fileURLToPath(new URL('..', import.meta.url)))
+.catch(handle)

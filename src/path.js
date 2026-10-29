@@ -1,3 +1,1 @@
-module.exports = {
-  workDir: process.cwd(),
-}
+export const workDir = process.cwd()

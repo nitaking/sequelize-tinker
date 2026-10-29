@@ -30,4 +30,4 @@ logger.error = function (msg) {
   (this.level >= this.LEVEL.ERROR) && console.error(msg)
 }
 
-module.exports = logger
+export default logger
