@@ -1,10 +1,12 @@
 
 import {secureRequire} from './secure-require.js'
 import config from './config.js'
-const models = secureRequire(config.getModelsPath()) // todo: import setting
-const sequelize = models && models.sequelize
 
 function initializeContext(context) {
+  // --models-pathの設定後に読み込む
+  const models = secureRequire(config.getModelsPath())
+  const sequelize = models && models.sequelize
+
   // Contextにセットすることでrepl内で利用可能な変数になる
   if (models && sequelize) {
     context.models = []
